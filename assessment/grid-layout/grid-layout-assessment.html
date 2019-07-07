@@ -19,35 +19,56 @@
 
     .a {
       background: #0d9;
+      grid-column: 1/2;
+
+
     }
 
     .b {
       background: #d90;
+      order: 0;
+
+
     }
 
     .c {
       background: #9d0;
+      order: 1;
     }
 
     .d {
       background: #90d;
+      
+            order: 2;
+
     }
 
     .e {
       background: #d09;
+         
+      order:3 ;
+
     }
 
     .f {
       background: #09d;
+            order: 5;
+
     }
 
 
     /* Your code starts here */
     /* CODE AREA */
 
-    .container {}
+    .container {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      grid-gap: 5px;
+    }
 
-    .a {}
+    .a {order: 4;
+      grid-column: 2/3;}
 
     /* END CODE AREA */
   </style>
