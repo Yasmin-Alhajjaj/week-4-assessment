@@ -24,6 +24,7 @@
     .leftbar,
     .rightbar {
       background-color: #09d;
+         flex:1;
 
     }
 
@@ -41,13 +42,26 @@
 
     /* Your code starts here */
     /* CODE AREA */
-    .container {}
+    .container {
+      display: flex;
 
-    .content {}
+/*align-items: stretch;   
+*/
+}
 
-    .leftbar {}
+    .content {
+      height:  100%;
+flex:2;
 
-    /* END CODE AREA */
+    }
+
+    .leftbar {
+      order: -1;
+      height: 785px;
+
+    }
+
+    /* END CODE AREA 
   </style>
 </head>
 
@@ -56,6 +70,7 @@
     <p>This is the Header</p>
   </header>
   <div class="container">
+
     <div class="content">
       <h1>Instructions</h1>
       <ul>
@@ -65,15 +80,19 @@
         <li>You have to apply same design in the provided picture below using <b>Flexbox</b></li>
       </ul>
     </div>
+
     <div class="leftbar">
       <p>I am a left-bar. correct the css to align me to the left.</p>
     </div>
+
     <div class="rightbar">
       <p>
         I am a right-bar. correct the css to align me to the right.
       </p>
     </div>
+
   </div> <!-- body_container -->
+
   <footer>
     <p>This is the Footer</p>
   </footer>
